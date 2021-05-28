@@ -11,6 +11,7 @@ class Khyuser(models.Model):
 
     def __str__(self):
         return self.email
+
     class Meta:
         db_table = 'khy_user'
         verbose_name = '사용자'
