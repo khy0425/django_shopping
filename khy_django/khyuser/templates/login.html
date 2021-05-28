@@ -3,7 +3,7 @@
 {% block contents %}
 <div class="row mt-5">
     <div class="col-12 text-center">
-        <h1>회원가입</h1>
+        <h1>로그인</h1>
     </div>
 </div>
 <div class="row mt-5">
@@ -26,9 +26,9 @@
             <span style="color: red">{{ field.errors }}</span>
             {% endif %}
             {% endfor %}
-            <button type="submit" class="btn btn-primary">회원가입</button>
+            <button type="submit" class="btn btn-primary">로그인</button>
             <div class = "form-row float-right">
-                <button formaction="/login/" class="btn btn-primary">로그인</button>
+                <button formaction="/register/" class="btn btn-primary">회원가입</button>
             </div>
         </form>
     </div>
