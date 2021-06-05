@@ -18,7 +18,7 @@ from django.urls import path
 from khyuser.views import index, logout, RegisterView, LoginView
 from product.views import (
     ProductList, ProductCreate, ProductDetail,
-    ProductListAPI
+    ProductListAPI,ProductDetailAPI
 )
 from order.views import OrderCreate, OrderList
 
@@ -33,5 +33,6 @@ urlpatterns = [
     path('product/create/', ProductCreate.as_view()),
     path('order/', OrderList.as_view()),
     path('order/create/', OrderCreate.as_view()),
-    path('api/product/', ProductListAPI.as_view())
+    path('api/product/', ProductListAPI.as_view()),
+    path('api/product/<int:pk>', ProductDetailAPI.as_view())
 ]
